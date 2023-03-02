@@ -1,3 +1,4 @@
+# ShoppingCart
 #Lithium
 ## Project - Products Management
 
@@ -104,7 +105,7 @@
 
 ## GET /user/:userId/profile (Authentication required)
 - Allow an user to fetch details of their profile.
-- Make sure that userId in url param and in token is same //athorisation
+- Make sure that userId in url param and in token is same
 - __Response format__
   - _**On success**_ - Return HTTP status 200 and returns the user document. The response should be a JSON object like [this](#successful-response-structure)
   - _**On error**_ - Return a suitable error message with a valid HTTP status code. The response should be a JSON object like [this](#error-response-structure)
@@ -227,7 +228,7 @@ Send [form-data](https://developer.mozilla.org/en-US/docs/Web/API/FormData)
   - _**On success**_ - Return HTTP status 200. Also return the product documents. The response should be a JSON object like [this](#successful-response-structure)
   - _**On error**_ - Return a suitable error message with a valid HTTP status code. The response should be a JSON object like [this](#error-response-structure)
 
-### GET /products/:productId
+### GET /getAllProducts
 - Returns product details by product id
 - __Response format__
   - _**On success**_ - Return HTTP status 200. Also return the product documents. The response should be a JSON object like [this](#successful-response-structure)
@@ -479,8 +480,3 @@ Refer below sample
   updatedAt: "2021-09-17T04:25:07.803Z",
 }
 ```
-//code bug;
-1. password length max 15 extend with encryted
-2. jsonwebtoken required
-3. token send response not have userId
-4. token send in authorization-bearer token not headers
